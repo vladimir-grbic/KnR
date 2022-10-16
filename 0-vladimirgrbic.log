@@ -1,0 +1,59 @@
+Title:  Log File for Going Through K&R
+Author: Vladimir Grbić
+Date:   October 15, 2022
+
+##############################################################################
+#                                                                            #
+# Document lingo:                                                            #
+#                                                                            #
+# Timestamps:                                                                #
+#                                                                            #
+#     *****  IN: $(date) - start of the session                              #
+#     ** UPDATE: $(date) - the current time in the open session              #
+#     ***** OUT: $(date) - end of the session                                #
+#                                                                            #
+# Tags (section titles):                                                     #
+#                                                                            #
+#     # signifies the topic explored                                         #
+#                                                                            #
+# Listings:                                                                  #
+#                                                                            #
+#     -   itemize                                                            #
+#     (n) enumerate (here n is an integer)                                   #
+#                                                                            #
+##############################################################################
+
+*****  IN: Sat Oct 15 21:28:49 EDT 2022
+
+I forgot to log the previous session which was about 2 hours long.
+
+# Section 1.5
+
+Any character (whether on the keyboard or screen) is like everything else
+stored internally just as a bit pattern. 'char' is the type specifically meant
+to store such character data, but an 'int' can be used as well.
+
+That must be the case if one wants to store EOF character, which itself is an
+integer (defined in <stdio.h>).
+
+An assignment can appear as a prat of a larger expression.
+
+Eg.
+    while ((c = getchar()) != EOF)
+
+The parentheses around the assignment are necessary because the
+precedence of != is higher than that of =.
+
+%ld is the conversion specification used for long ints
+%f is both for float and double
+
+NOTE: '\n' = integer value equal to the numerical value of \n in the machine's
+      character set. Eg. \n = 10, A = 65 (ASCII)
+      Also note that `\n` is a single character and in expression is JUST AN
+      INTEGER, while "\n" is a string that happens to contain only one
+      character.
+
+I finished Exercise 1-10.
+
+
+***** OUT: Sun Oct 16 00:45:13 EDT 2022
