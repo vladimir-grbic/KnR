@@ -1,0 +1,14 @@
+/*
+    Exercise 1-11
+
+    How would you test the word count program? What kinds of input are most
+    likely to uncover bugs if there are any?
+*/
+
+I would test the program by running it on a file/input that has a few lines,
+where in each line I would have a few words, spaces, tabs, and different
+characters.
+
+Input that has a potential to cause errors would contain special symbols such
+as: n- and m-dash; words that break to the next line; arithmetic;
+abbreviations; and so on.
