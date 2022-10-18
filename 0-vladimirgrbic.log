@@ -68,3 +68,24 @@ Finished Section 1.5 besides Exercises 1-11 and 1-12.
 Finished Exercises 1-11 and 1-12.
 
 ***** OUT: Mon Oct 17 01:25:19 EDT 2022
+
+*****  IN: Tue Oct 18 00:37:54 EDT 2022
+
+# Section 1.6
+
+Always remember that ASCII characters are consecutive inccreasing values. So,
+to check if a character is in between certain values, this could would work:
+
+    if (c >= '0' && c <= '9')
+        ...
+
+NOTE: We are comparing c to the integer value of character '0' not 0. Remember,
+      characters are just small integers.
+
+Now, to get the actual number that a character c represents, one can do this:
+
+    int value = c - '0';
+
+I finished Section 1.6 besides the exercises.
+
+***** OUT: Tue Oct 18 01:08:34 EDT 2022
