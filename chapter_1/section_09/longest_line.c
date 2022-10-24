@@ -24,7 +24,7 @@ int main()
 
     // If there was a line.
     if (maxLen > 0)
-        printf("%s", longestLine);
+        printf("%s\n", longestLine);
 
     return 0;
 }
@@ -53,7 +53,7 @@ int getLine(char line[], int maxLineLen)
 
 void copy(char to[], char from[])
 {
-    // Copies 'from' into 't'; assumes 'to' is big enough.
+    // Copies 'from' into 'to'; assumes 'to' is big enough.
 
     int i = 0;
 
