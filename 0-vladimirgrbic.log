@@ -107,3 +107,20 @@ Finished Sections 1.7, 1.8, and 1.9 besides Exercises 1-17 to 1-19.
 Finished Exercises 1-17 and 1-18.
 
 ***** OUT: Mon Oct 24 23:58:52 EDT 2022
+
+*****  IN: Tue Oct 25 22:29:42 EDT 2022
+
+Finished Section 1.9.
+
+Here is an algorithm for reversing a string (from Exercise 1-19). Assume that
+'i' and 'len' are already defined.
+
+    // Reverse the string.
+    for (i = 0; i < (len / 2); ++i)
+    {
+        c = s[i];
+        s[i] = s[len - i];
+        s[len - i] = c;
+    }
+
+***** OUT: Tue Oct 25 22:52:02 EDT 2022
